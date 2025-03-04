@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head> <!-- header (title, CSS link and Jquery Link)-->
+    <title>
+      Football In South Africa
+    </title>
+    <link rel="stylesheet" href = "main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+  </head>
+
+  <body>
+    <script src="main.js"></script>
+    <button onclick="clearLocalStorage()">Clear Local Storage</button>
+
+    <button id="moveRedSquare">Move Red Square</button>
+    <div id="redSquare" style="background:#ff0000;height:100px;width:100px;position:absolute;"></div>
+
+    <!-- Link to the 'saved for later' page -->
+    <a href="saveForLater.html"><img class="bookmarkIcon"  src="https://www.svgrepo.com/show/474746/bookmark.svg" alt="bookmark"><p id="savedLink">Saved</p></a> 
+    <h1> Football In South Africa </h1>
+
+    <!-- Feature image and short into paragraph -->
+    <section style="column-count: 2; column-width: 650px;">
+      
+      <div onclick="addSavedItem('HomePageImg', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+      <img id="HomePageImg" src="https://www.theplayersagent.com/media/cache/thumb_710_inset/uploads/knowledgecenter/article/89/5a2a9a26771cd.png" width="650" alt="Tshabalala doing THE iconic celebration">
+      
+
+      <div onclick="addSavedItem('HomePageParagraph', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+      <p style="padding: 30px;">
+        With an estimated 4 billion fans worldwide, football is the most popular sport globally. <br>
+        Although football is very popular in South Africa, English Premier League Clubs tend to get more support than local ones. <br>
+        However, the national team (Bafana Bafana) are very well supported and most of their matches sell out. <br>
+        <br> 
+
+        Football is played across a number of professional and amatuer leagues. <br>    
+        <br> 
+
+        In South Africa, football has been played for around 150 years. <br>
+        The first club in South Africa are called <a href="https://en.wikipedia.org/wiki/Savages_FC_Pietermaritzburg">Savages FC (Pietermaritzburg)</a>.
+
+      </p>
+
+    </section>
+
+    <!-- Links to other pages -->
+    <div onclick="addSavedItem('HomePageLinks', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+    <section style="column-count: 2;">
+      <a href="PSL.html">Click Here to find out more about League Football in South Africa</a><br><br>
+      <a href="SAFA.html">Click Here to find out more about the National Football Team of South Africa</a>
+      <br>
+    </section>
+
+    <!-- News letter section -->
+    <div onclick="addSavedItem('HomePageNewsletter', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+    <section style="background-color: #237a4f; text-align: center;">
+      <h2>Want Future Updates? Why Not Subscribe To Our Newsletter!</h2>
+      <label for="UserEmail">Enter Your Email:</label>
+      <input type="text" id="UserEmail"><br>
+
+      <input type="radio" id="Monthly" name="SubType" value="Monthly">
+      <label for="Monthly">Monthly</label>
+      <input type="radio" id="Annual" name="SubType" value="Annual">
+      <label for="Annual">Annual</label>
+
+      <input type="button" id="Submit" value="Submit">
+    </section>
+
+
+    
+    <section style="background-color: gray;">
+      <div onclick="addSavedItem('HomePageLikeComment', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+      <h2>Leave a Like or Comment</h2>
+      <!-- Like Form-->
+      <section>
+        <form>
+          <input type="button" value="♡ LIKE" style="font-size: 20;">
+        </form>
+      </section>
+
+      <!-- Comment Form -->
+      <section>
+        
+        <form>
+          <label>Your Name: </label>
+          <input type = "text"><br>
+          <label> Your Message: </label>
+          <input type = "text"> <br>
+          <button>Submit</button>
+        </form>
+      </section>
+    </section>
+
+
+
+    <!-- Contact Form -->
+    <section>
+      
+      <button id="show">Show Contact Form</button>
+      <button id="hide">Hide Contact Form</button>
+
+      <form style="text-align: left; background-color: gray;">
+        <div onclick="addSavedItem('HomePageContact', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+        <h2 style="text-align: left;">Contact Me:</h2>
+        <section id="contactForm">
+          <label>Your Name: </label>
+          <input type = "text"><br>
+          <label> Your Email:</label>
+          <input type = "text"><br>
+          <label> Your Message: </label>
+          <input type = "text"> <br>
+          <button>Submit</button>
+        </section>
+      </form>
+
+    </section>
+
+
+    <!-- References drop down -->
+    <div onclick="addSavedItem('HomePageSources', 'index')"><img class="bookmarkIcon"  src="PlusBookMark.png" alt="plusBookmark"></div>  
+    <h2 id="referencesTitle">References and Sources (Click Here)</h2>
+    <ul id="references"> 
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">Table Syntax</a></li>
+      <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3">Table Syntax2</a></li>
+      <li><a href="https://www.fotmob.com/en-GB/leagues/537/matches/premier-soccer-league?group=by-round">Fixtures</a></li>
+      <li><a href="https://www.w3schools.com/html/html_lists_unordered.asp">List Syntax</a></li>
+      <li><a href="https://www.sowetanlive.co.za/sport/soccer/2024-11-20-poll-do-you-think-bafanas-glory-days-are-back-after-qualifying-for-afcon-top-of-their-group/">Image 1</a></li>
+      <li><a href="https://www.goal.com/en-za/premier-soccer-league/table/yv73ms6v1995b5wny16jcfi3">League Table</a></li>
+      <li><a href="https://www.psl.co.za/content/5488">Image2</a></li>
+      <li><a href="https://www.psl.co.za/news/article/5607234-citizens-dash-sundowns-invincible-dre">Image3</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/2010_FIFA_World_Cup">Image4</a></li>
+      <li><a href="https://www.facebook.com/savagespmb/">First FC Info</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Savages_FC_Pietermaritzburg">First Fc Info2</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/South_African_Football_Association">SAFA information and image</a></li>
+      <li><a href="https://bestdiplomats.org/most-popular-sports-in-the-world/">Most Popular sports</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Soccer_in_South_Africa ">General Information</a></li>
+      <li><a href="https://www.w3schools.com/tags/att_input_type_radio.asp">Input(Radio) syntax and Info</a></li>
+      <li><a href="https://www.svgrepo.com/svg/474746/bookmark">Bookmark icon</a></li>
+      <li><a href="https://www.svgrepo.com/svg/408746/save-wishlist-like-favorite">SaveTo bookmark icon</a></li>
+      <li><a href="https://pinetools.com/invert-image-colors">inverted boookmark colours (to make it suitbale for dark theme use)</a></li>
+      <li><a href="https://www.w3schools.com/Jquery/jquery_animate.asp">Jquery Animate Syntax</a></li>
+    </ul> 
+  </body>
+
+
+
+</html>

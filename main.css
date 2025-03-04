@@ -1,0 +1,124 @@
+/*Body/Paragraph Formatting*/
+body {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Verdana;
+  font-size: 36pt;
+  text-align: center;
+} 
+
+p {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Helvetica;
+  font-size: 12pt;
+  text-align: left;
+}
+
+a {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Helvetica;
+  font-size: 12pt;
+  text-align: left;
+}
+
+
+blockquote {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Helvetica;
+  font-size: 12pt;
+  text-align: left;
+}
+
+/* Unused - kept in case needed in future
+caption {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Helvetica;
+  font-size: 12pt;
+  text-align: left;
+}
+*/
+
+
+
+
+/* Heading Formatting*/
+h1 {
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 36pt;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 18pt;
+  text-align: center;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 12pt;
+  text-align: left;
+}
+
+
+/* Lists, Tables, Inputs Formatting*/
+li {
+  color: #ffffff;
+  font-size: 12pt;
+  text-align: left;
+  list-style: none;
+}
+
+table {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: Helvetica;
+  font-size: 12pt;
+  text-align: left;
+  border: 1px solid white;
+}
+
+label {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 18pt;
+  text-align: center;
+}
+
+/*Element Specific formatting*/
+#referencesTitle {
+  text-align: left;
+}
+
+.bookmarkIcon {
+  width: 25px;
+  display: inline-block;
+  float: right;
+}
+
+#savedLink {
+  text-align: right;
+}
+
+
+
+/* Container holding the image and the text (for text over image) - https://www.w3schools.com/howto/howto_css_image_text.asp */
+.container {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
